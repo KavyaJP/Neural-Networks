@@ -3,3 +3,5 @@ torchvision
 numpy
 matplotlib
 pandas
+scikit-learn
+keras
