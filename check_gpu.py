@@ -1,41 +1,34 @@
 import os
 
-# 1. Force Keras to use PyTorch before importing it
+# Backend must be set BEFORE importing keras
 os.environ["KERAS_BACKEND"] = "torch"
 
 import keras
-import torch  # We import this just to verify the device count logic underneath
+import torch
 
-print("--- Keras Configuration ---")
-print(f"Keras Backend: {keras.backend.backend()}")
-print(f"Keras Version: {keras.__version__}")
+print(
+    f"--- Environment: Keras {keras.__version__} | Backend: {keras.backend.backend()} ---"
+)
 
-# Check GPU availability through the backend engine
-print(f"\n--- GPU Check (via {keras.backend.backend()}) ---")
-print("CUDA available:", torch.cuda.is_available())
-print("Device count:", torch.cuda.device_count())
-if torch.cuda.is_available():
-    print("Device name:", torch.cuda.get_device_name(0))
+# Verify hardware visibility
+cuda_ready = torch.cuda.is_available()
+print(f"CUDA Available: {cuda_ready}")
 
-print("\n--- Performance Test ---")
-try:
-    # 2. Use the Keras context manager to force operations onto the GPU
-    # This is the Keras equivalent of device="cuda"
-    with keras.device("cuda"):
-        print("Allocating tensors on GPU...")
-        # keras.random.normal is the agnostic equivalent of torch.randn
-        x = keras.random.normal((5000, 5000))
-        y = keras.random.normal((5000, 5000))
+if cuda_ready:
+    print(f"GPU: {torch.cuda.get_device_name(0)}")
+    print(f"Device Count: {torch.cuda.device_count()}")
 
-        print("Computing matmul...")
-        # keras.ops.matmul is the agnostic equivalent of x @ y
-        z = keras.ops.matmul(x, y)
+    print("\n--- Running MatMul Stress Test ---")
+    try:
+        # Forcing a large operation to ensure the 1650 Ti is actually engaged
+        with keras.device("cuda"):
+            x = keras.random.normal((5000, 5000))
+            y = keras.random.normal((5000, 5000))
+            z = keras.ops.matmul(x, y)
 
-        # Verify the tensor actually lives on the GPU
-        # specific to torch backend, we can check .device
-        print(f"Result device: {z.device}")
-
-    print("Success")
-
-except Exception as e:
-    print(f"Error: {e}")
+            print(f"Tensor Move Success: {z.device}")
+            print("GPU Compute: OK")
+    except Exception as e:
+        print(f"Compute Failed: {e}")
+else:
+    print("\n[!] GPU not found. Check drivers or CUDA installation.")
