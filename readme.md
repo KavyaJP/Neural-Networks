@@ -1,8 +1,9 @@
 # Neural Network Playground
 
-*Personal playground for prototyping neural networks on tabular data — comparing deep learning against XGBoost/LightGBM & Traditional Machine Learning Models on real classification & regression problems.*
+_Personal playground for prototyping neural networks on tabular data — comparing deep learning against XGBoost/LightGBM & Traditional Machine Learning Models on real classification & regression problems._
 
 ## Table of Contents
+
 - [Neural Network Playground](#neural-network-playground)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
@@ -28,13 +29,13 @@ This repository serves as my experimentation space — a place to prototype arch
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Last Commit](https://img.shields.io/github/last-commit/KavyaJP/Neural-Networks)
 
-
 ## Projects
 
-| Project                              | Type           | Project File                               | Dataset                                  |
-| ------------------------------------ | -------------- | ------------------------------------------ | ---------------------------------------- |
-| Car Price Prediction - Prerequisites | Regression     | [Prerequisites](prerequisites.ipynb)       | [data](dataset/car_price_prediction.csv) |
-| Loan Approval Classification         | Classification | [File](loan_approval_classification.ipynb) | [data](dataset/loan_data.csv)            |
+| Project                       | Type                  | Project File                               | Dataset                                  |
+| ----------------------------- | --------------------- | ------------------------------------------ | ---------------------------------------- |
+| Prerequisites                 | Regression - ML only  | [Prerequisite](prerequisites.ipynb)        | [data](dataset/car_price_prediction.csv) |
+| Loan Approval Classification  | Binary Classification | [File](loan_approval_classification.ipynb) | [data](dataset/loan_data.csv)            |
+| Customer Churn Classification | Binary Classification | [File](customer_churn.ipynb)               | [data](dataset/churn.csv)                |
 
 ## Tech Stack
 
@@ -66,12 +67,15 @@ cd Neural-Networks
 ```
 
 ### Install Dependencies
+
 Install the required dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 But you might want to make a venv if you are on Linux:
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -79,21 +83,25 @@ pip install -r requirements.txt
 ```
 
 ### Optional: Add GPU Support
+
 1. Go to [PyTorch - Get Started](https://pytorch.org/get-started/locally/)
 2. Select
-    - OS
-    - Package: pip
-    - Language: Python
-    - Compute Platform:
-      - CUDA (For NVidia GPU)
-      - ROCm (For AMD GPU - only works on Linux, try using WSL for support on Windows)
+   - OS
+   - Package: pip
+   - Language: Python
+   - Compute Platform:
+     - CUDA (For NVidia GPU)
+     - ROCm (For AMD GPU - only works on Linux, try using WSL for support on Windows)
 3. Run the installation command provided on the website.
 
 #### Verify GPU Support
+
 After installing the CUDA-enabled version of PyTorch, run:
+
 ```bash
 python check_gpu.py
-``` 
+```
+
 If everything is configured correctly, it should detect your GPU.
 
 ## Core Focus Areas
