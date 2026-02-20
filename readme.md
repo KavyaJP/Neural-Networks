@@ -9,8 +9,8 @@ _Personal playground for prototyping neural networks on tabular data — compari
   - [Overview](#overview)
   - [Projects](#projects)
   - [Outputs](#outputs)
-    - [Customer Churn ANN Training and Validation loss \& Recall](#customer-churn-ann-training-and-validation-loss--recall)
-    - [Car Price Prediction Training and Validation loss \& RMSE](#car-price-prediction-training-and-validation-loss--rmse)
+    - [Customer Churn ANN](#customer-churn-ann)
+    - [Car Price Prediction](#car-price-prediction)
   - [Tech Stack](#tech-stack)
   - [Installation](#installation)
     - [Install Python](#install-python)
@@ -42,13 +42,13 @@ This repository serves as my experimentation space — a place to prototype arch
 
 ## Outputs
 
-### Customer Churn ANN Training and Validation loss & Recall
+### Customer Churn ANN
 
-![Customer Churn](screenshots/churn.png)
+![Customer Churn Training and Validation loss & Recall](screenshots/churn.png)
 
-### Car Price Prediction Training and Validation loss & RMSE
+### Car Price Prediction
 
-![Car Price](screenshots/car_price.png)
+![Car Price Training and Validation loss & RMSE](screenshots/car_price.png)
 
 ## Tech Stack
 
