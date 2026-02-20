@@ -8,6 +8,9 @@ _Personal playground for prototyping neural networks on tabular data — compari
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Projects](#projects)
+  - [Outputs](#outputs)
+    - [Customer Churn ANN Training and Validation loss \& Recall](#customer-churn-ann-training-and-validation-loss--recall)
+    - [Car Price Prediction Training and Validation loss \& RMSE](#car-price-prediction-training-and-validation-loss--rmse)
   - [Tech Stack](#tech-stack)
   - [Installation](#installation)
     - [Install Python](#install-python)
@@ -31,11 +34,21 @@ This repository serves as my experimentation space — a place to prototype arch
 
 ## Projects
 
-| Project                       | Type                  | Project File                               | Dataset                                  |
-| ----------------------------- | --------------------- | ------------------------------------------ | ---------------------------------------- |
-| Prerequisites                 | Regression - ML only  | [Prerequisite](prerequisites.ipynb)        | [data](dataset/car_price_prediction.csv) |
-| Loan Approval Classification  | Binary Classification | [File](loan_approval_classification.ipynb) | [data](dataset/loan_data.csv)            |
-| Customer Churn Classification | Binary Classification | [File](customer_churn.ipynb)               | [data](dataset/churn.csv)                |
+| Project              | Type                  | Project File                               | Dataset                                  |
+| -------------------- | --------------------- | ------------------------------------------ | ---------------------------------------- |
+| Car Price Prediction | Regression            | [File](car_price.ipynb)                    | [data](dataset/car_price_prediction.csv) |
+| Loan Approval        | Binary Classification | [File](loan_approval_classification.ipynb) | [data](dataset/loan_data.csv)            |
+| Customer Churn       | Binary Classification | [File](customer_churn.ipynb)               | [data](dataset/churn.csv)                |
+
+## Outputs
+
+### Customer Churn ANN Training and Validation loss & Recall
+
+![Customer Churn](screenshots/churn.png)
+
+### Car Price Prediction Training and Validation loss & RMSE
+
+![Car Price](screenshots/car_price.png)
 
 ## Tech Stack
 
