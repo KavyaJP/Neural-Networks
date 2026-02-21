@@ -2,3 +2,5 @@
 .vscode/
 *.keras
 *.joblib
+
+*_cleaned.csv

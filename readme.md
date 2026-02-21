@@ -11,6 +11,7 @@ _Personal playground for prototyping neural networks on tabular data — compari
   - [Outputs](#outputs)
     - [Customer Churn ANN](#customer-churn-ann)
     - [Car Price Prediction](#car-price-prediction)
+    - [Walmart](#walmart)
   - [Tech Stack](#tech-stack)
   - [Installation](#installation)
     - [Install Python](#install-python)
@@ -36,9 +37,12 @@ This repository serves as my experimentation space — a place to prototype arch
 
 | Project              | Type                  | Project File                               | Dataset                                  |
 | -------------------- | --------------------- | ------------------------------------------ | ---------------------------------------- |
-| Car Price Prediction | Regression            | [File](car_price.ipynb)                    | [data](dataset/car_price_prediction.csv) |
 | Loan Approval        | Binary Classification | [File](loan_approval_classification.ipynb) | [data](dataset/loan_data.csv)            |
 | Customer Churn       | Binary Classification | [File](customer_churn.ipynb)               | [data](dataset/churn.csv)                |
+| Car Price Prediction | Regression            | [File](car_price.ipynb)                    | [data](dataset/car_price_prediction.csv) |
+| Walmart              | Regression            | [File](walmart.ipynb)                      | [data](dataset/Walmart.csv)              |
+
+**Quick Note**: _As the projects keeps going further and further, my own code gets better and better, so if you want to learn from it then I recommend checking out the latest Projects done by me, the list is already in oldest to latest order._
 
 ## Outputs
 
@@ -49,6 +53,10 @@ This repository serves as my experimentation space — a place to prototype arch
 ### Car Price Prediction
 
 ![Car Price Training and Validation loss & RMSE](screenshots/car_price.png)
+
+### Walmart
+
+![Walmart Training and Validation loss & RMSE](screenshots/walmart.png)
 
 ## Tech Stack
 
