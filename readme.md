@@ -62,7 +62,7 @@ This repository serves as my experimentation space — a place to prototype arch
 
 ### California Housing
 
-![California Housing Training and Validation loss & RMSE](screenshots/walmart.png)
+![California Housing Training and Validation loss & RMSE](screenshots/california_housing.png)
 
 ## Tech Stack
 
