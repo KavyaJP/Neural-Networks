@@ -9,10 +9,11 @@ _Personal playground for prototyping neural networks on tabular data — compari
   - [Overview](#overview)
   - [Projects](#projects)
   - [Outputs](#outputs)
-    - [Customer Churn ANN](#customer-churn-ann)
-    - [Walmart](#walmart)
-    - [California Housing](#california-housing)
+    - [Customer Churn Classification](#customer-churn-classification)
+    - [Walmart Sales Prediction](#walmart-sales-prediction)
+    - [California Housing Price Prediction](#california-housing-price-prediction)
     - [Car Price Prediction](#car-price-prediction)
+    - [Heart Disease Classification](#heart-disease-classification)
   - [Tech Stack](#tech-stack)
   - [Installation](#installation)
     - [Install Python](#install-python)
@@ -36,33 +37,38 @@ This repository serves as my experimentation space — a place to prototype arch
 
 ## Projects
 
-| Project              | Type                  | Project File                               | Dataset                               |
-| -------------------- | --------------------- | ------------------------------------------ | ------------------------------------- |
-| Loan Approval        | Binary Classification | [File](loan_approval_classification.ipynb) | [data](data/loan_data.csv)            |
-| Customer Churn       | Binary Classification | [File](customer_churn.ipynb)               | [data](data/churn.csv)                |
-| Walmart              | Regression            | [File](walmart.ipynb)                      | [data](data/Walmart.csv)              |
-| California Housing   | Regression            | [File](california_housing.ipynb)           | [data](data/housing.csv)              |
-| Car Price Prediction | Regression            | [File](car_price.ipynb)                    | [data](data/car_price_prediction.csv) |
+| Project            | Type                  | Project File                                       | Dataset                                     |
+| ------------------ | --------------------- | -------------------------------------------------- | ------------------------------------------- |
+| Loan Approval      | Binary Classification | [File](tabular/loan_approval_classification.ipynb) | [data](data/loan_data.csv)                  |
+| Customer Churn     | Binary Classification | [File](tabular/customer_churn.ipynb)               | [data](data/churn.csv)                      |
+| Walmart            | Regression            | [File](tabular/walmart.ipynb)                      | [data](data/Walmart.csv)                    |
+| California Housing | Regression            | [File](tabular/california_housing.ipynb)           | [data](data/housing.csv)                    |
+| Car Price          | Regression            | [File](tabular/car_price.ipynb)                    | [data](data/car_price_prediction.csv)       |
+| Heart Disease      | Classification        | [File](tabular/heart_disease.ipynb)                | [data](https://zenodo.org/records/15364962) |
 
 **Quick Note**: _As the projects keeps going further and further, my own code gets better and better, so if you want to learn from it then I recommend checking out the latest Projects done by me, the list is already in oldest to latest order._
 
 ## Outputs
 
-### Customer Churn ANN
+### Customer Churn Classification
 
 ![Customer Churn Training and Validation loss & Recall](screenshots/churn.png)
 
-### Walmart
+### Walmart Sales Prediction
 
 ![Walmart Training and Validation loss & RMSE](screenshots/walmart.png)
 
-### California Housing
+### California Housing Price Prediction
 
 ![California Housing Training and Validation loss & RMSE](screenshots/california_housing.png)
 
 ### Car Price Prediction
 
 ![Car Price Training and Validation loss & RMSE](screenshots/car_price.png)
+
+### Heart Disease Classification
+
+![Heart Disease Training and Validation loss & Recall](screenshots/heart_disease.png)
 
 ## Tech Stack
 
