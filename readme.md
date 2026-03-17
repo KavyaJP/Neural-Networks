@@ -1,6 +1,6 @@
 # Neural Network Playground
 
-_Personal playground for prototyping neural networks on tabular data — comparing deep learning against XGBoost/LightGBM & Traditional Machine Learning Models on real classification & regression problems._
+_Personal playground for prototyping neural networks on different type of data — comparing deep learning against XGBoost/LightGBM & Traditional Machine Learning Models on real classification & regression problems._
 
 ## Table of Contents
 
@@ -14,6 +14,7 @@ _Personal playground for prototyping neural networks on tabular data — compari
     - [California Housing Price Prediction](#california-housing-price-prediction)
     - [Car Price Prediction](#car-price-prediction)
     - [Heart Disease Classification](#heart-disease-classification)
+    - [MNIST Classification](#mnist-classification)
   - [Tech Stack](#tech-stack)
   - [Installation](#installation)
     - [Install Python](#install-python)
@@ -45,6 +46,7 @@ This repository serves as my experimentation space — a place to prototype arch
 | California Housing | Regression            | [File](tabular/california_housing.ipynb)           | [data](data/housing.csv)                    |
 | Car Price          | Regression            | [File](tabular/car_price.ipynb)                    | [data](data/car_price_prediction.csv)       |
 | Heart Disease      | Classification        | [File](tabular/heart_disease.ipynb)                | [data](https://zenodo.org/records/15364962) |
+| MNIST              | Classification        | [File](cnn/mnist.ipynb)                            | [data]()                                    |
 
 **Quick Note**: _As the projects keeps going further and further, my own code gets better and better, so if you want to learn from it then I recommend checking out the latest Projects done by me, the list is already in oldest to latest order._
 
@@ -69,6 +71,10 @@ This repository serves as my experimentation space — a place to prototype arch
 ### Heart Disease Classification
 
 ![Heart Disease Training and Validation loss & Recall](screenshots/heart_disease.png)
+
+### MNIST Classification
+
+![MNIST CNN Training and Validation loss & Accuracy](screenshots/mnist.png)
 
 ## Tech Stack
 
