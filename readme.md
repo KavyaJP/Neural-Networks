@@ -15,6 +15,7 @@ _Personal playground for prototyping neural networks on different type of data �
     - [Car Price Prediction](#car-price-prediction)
     - [Heart Disease Classification](#heart-disease-classification)
     - [MNIST Classification](#mnist-classification)
+    - [Dog and Cat Classification](#dog-and-cat-classification)
   - [Tech Stack](#tech-stack)
   - [Installation](#installation)
     - [Install Python](#install-python)
@@ -38,15 +39,16 @@ This repository serves as my experimentation space — a place to prototype arch
 
 ## Projects
 
-| Project            | Type                  | Project File                                       | Dataset                                     |
-| ------------------ | --------------------- | -------------------------------------------------- | ------------------------------------------- |
-| Loan Approval      | Binary Classification | [File](tabular/loan_approval_classification.ipynb) | [data](data/loan_data.csv)                  |
-| Customer Churn     | Binary Classification | [File](tabular/customer_churn.ipynb)               | [data](data/churn.csv)                      |
-| Walmart            | Regression            | [File](tabular/walmart.ipynb)                      | [data](data/Walmart.csv)                    |
-| California Housing | Regression            | [File](tabular/california_housing.ipynb)           | [data](data/housing.csv)                    |
-| Car Price          | Regression            | [File](tabular/car_price.ipynb)                    | [data](data/car_price_prediction.csv)       |
-| Heart Disease      | Classification        | [File](tabular/heart_disease.ipynb)                | [data](https://zenodo.org/records/15364962) |
-| MNIST              | Classification        | [File](cnn/mnist.ipynb)                            | [data]()                                    |
+| Project            | Type                            | Project File                                       | Dataset                                                        |
+| ------------------ | ------------------------------- | -------------------------------------------------- | -------------------------------------------------------------- |
+| Loan Approval      | Binary Classification           | [File](tabular/loan_approval_classification.ipynb) | [data](data/loan_data.csv)                                     |
+| Customer Churn     | Binary Classification           | [File](tabular/customer_churn.ipynb)               | [data](data/churn.csv)                                         |
+| Walmart            | Regression                      | [File](tabular/walmart.ipynb)                      | [data](data/Walmart.csv)                                       |
+| California Housing | Regression                      | [File](tabular/california_housing.ipynb)           | [data](data/housing.csv)                                       |
+| Car Price          | Regression                      | [File](tabular/car_price.ipynb)                    | [data](data/car_price_prediction.csv)                          |
+| Heart Disease      | Binary Classification           | [File](tabular/heart_disease.ipynb)                | [data](https://zenodo.org/records/15364962)                    |
+| MNIST              | Image Multiclass Classification | [File](cnn/mnist.ipynb)                            | Built-in (`keras.datasets.mnist`)                              |
+| Cat and Dog        | Image Binary Classification     | [File](cnn/cat_and_dog.ipynb)                      | [data](https://www.kaggle.com/datasets/tongpython/cat-and-dog) |
 
 **Quick Note**: _As the projects keeps going further and further, my own code gets better and better, so if you want to learn from it then I recommend checking out the latest Projects done by me, the list is already in oldest to latest order._
 
@@ -75,6 +77,10 @@ This repository serves as my experimentation space — a place to prototype arch
 ### MNIST Classification
 
 ![MNIST CNN Training and Validation loss & Accuracy](screenshots/mnist.png)
+
+### Dog and Cat Classification
+
+![Dog and Cat CNN Training and Validation loss & Accuray](screenshots/cat_and_dog.png)
 
 ## Tech Stack
 
