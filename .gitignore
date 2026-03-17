@@ -8,6 +8,5 @@ heart.csv
 *_results.csv
 *_extracted_feature.csv
 *.pdf
-*.png
 
 cat_and_dog/
