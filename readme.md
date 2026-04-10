@@ -16,6 +16,7 @@ _Personal playground for prototyping neural networks on different type of data �
     - [Heart Disease Classification](#heart-disease-classification)
     - [MNIST Classification](#mnist-classification)
     - [Dog and Cat Classification](#dog-and-cat-classification)
+    - [DIFAR-10 Classification](#difar-10-classification)
   - [Tech Stack](#tech-stack)
   - [Installation](#installation)
     - [Install Python](#install-python)
@@ -49,6 +50,7 @@ This repository serves as my experimentation space — a place to prototype arch
 | Heart Disease      | Binary Classification           | [File](tabular/heart_disease.ipynb)      | [data](https://zenodo.org/records/15364962)                    |
 | MNIST              | Image Multiclass Classification | [File](cnn/mnist.ipynb)                  | Built-in (`keras.datasets.mnist`)                              |
 | Cat and Dog        | Image Binary Classification     | [File](cnn/cat_and_dog.ipynb)            | [data](https://www.kaggle.com/datasets/tongpython/cat-and-dog) |
+| CIFAR-10           | Image Multiclass Classification | [File](cnn/cifar.ipynb)                  | [data](https://www.kaggle.com/competitions/cifar-10/data)      |
 
 **Quick Note**: _As the projects keeps going further and further, my own code gets better and better, so if you want to learn from it then I recommend checking out the latest Projects done by me, the list is already in oldest to latest order._
 
@@ -81,6 +83,10 @@ This repository serves as my experimentation space — a place to prototype arch
 ### Dog and Cat Classification
 
 ![Dog and Cat CNN Training and Validation loss & Accuray](screenshots/cat_and_dog.png)
+
+### DIFAR-10 Classification
+
+![CIFAR-10 CNN Training and Validation loss & Accuray](screenshots/cifar.png)
 
 ## Tech Stack
 
